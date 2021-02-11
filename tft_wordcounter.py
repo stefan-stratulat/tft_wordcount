@@ -1,7 +1,8 @@
 import openpyxl
 
 #input the file name (file must be in the same folder as the script)
-filename = input("Input file name: ")
+instruction  = "Add the file name, insluding the extentions. For example: example.xlsx "
+filename = input("Input file: ")
 
 #open the file and read column G from each sheet
 data = openpyxl.load_workbook(filename)
