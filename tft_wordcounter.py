@@ -27,6 +27,7 @@ def click():
     data = openpyxl.load_workbook(excel)
 
     txt_file = open("word_count.txt",'w+')
+    txt_file.write('Tab name'+" "+ 'No. of words'+'\n')
     #loop to go trough each sheet
     for sheet in data.get_sheet_names():
         ws = data[sheet]
@@ -46,7 +47,6 @@ def click():
             #add the number for words to the total words in sheet
             word_count = word_count+counter
         #add info in txt_file
-        txt_file.write('Tab name'+" "+ 'No. of words'+'\n')
         txt_file.write(sheet+" "+ str(word_count)+'\n')
     #save the data based on sheet name
 
