@@ -36,7 +36,7 @@ def click():
 
         #go trough each sheet and row values
         for row in colF:
-            words = row.value
+            words = str(row.value)
             if words is None:
                 continue
             else:
