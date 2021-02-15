@@ -48,7 +48,6 @@ def click():
             word_count = word_count+counter
         #add info in txt_file
         txt_file.write(sheet+" "+ str(word_count)+'\n')
-    #save the data based on sheet name
 
 #add button to get words
 button = Button(root,text="Count words",command=click)
